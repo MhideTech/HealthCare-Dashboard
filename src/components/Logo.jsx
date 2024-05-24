@@ -3,10 +3,9 @@ import styles from "./Logo.module.css";
 
 function Logo() {
   return (
-    // <Link to="/">
-    //   <img src="/TestLogo.png" alt="HealthCare logo" className={styles.logo} />
-    // </Link>
-    null
+    <Link to="/">
+      <img src="/TestLogo.png" alt="HealthCare logo" className={styles.logo} />
+    </Link>
   );
 }
 

@@ -5,7 +5,6 @@ import Schedule from "./pages/Schedule";
 import Message from "./pages/Message";
 import Transaction from "./pages/Transaction";
 import PageNotFound from "./pages/PageNotFound";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
