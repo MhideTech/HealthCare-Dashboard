@@ -8,7 +8,7 @@ function Patients() {
   return (
     <div className={styles.app}>
       <Navbar />
-      <section>
+      <section className={styles.main}>
         <PatientsList />
         <DiagnosisSection />
         <PatientProfile />

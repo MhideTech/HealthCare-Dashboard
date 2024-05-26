@@ -1,4 +1,32 @@
-.patientsListContainer{
-    width: 30%;
-    background-color: red;
+.patientsListContainer {
+  width: 23%;
+  height: 500px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.patientListHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.patient, .patientImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patient{
+    padding: 16px 20px;
+    /* background-color: blue; */
+}
+.patient:hover{
+    background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
+}
+
+.patientImg img{
+    margin: 0px 12px 0px 0px;
 }
