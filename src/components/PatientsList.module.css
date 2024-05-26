@@ -13,20 +13,46 @@
   padding: 20px;
 }
 
-.patient, .patientImg{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.patient,
+.patientImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.patient{
-    padding: 16px 20px;
-    /* background-color: blue; */
+.patient {
+  padding: 16px 20px;
+  /* background-color: blue; */
 }
-.patient:hover{
-    background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
+.patient:hover {
+  background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
 }
 
-.patientImg img{
-    margin: 0px 12px 0px 0px;
+.patientImg img {
+  margin: 0px 12px 0px 0px;
+}
+
+.patientImg h3 {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+    var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+
+.patientImg p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
 }
