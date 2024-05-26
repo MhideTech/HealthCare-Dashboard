@@ -9,24 +9,34 @@ function Navbar() {
 
       <ul>
         <li>
-          <img src="/src/assets/home-icon.png" alt="" />
-          <NavLink to="/">Overview</NavLink>
+          <NavLink to="/">
+            <img src="/src/assets/home-icon.png" alt="" />
+            Overview
+          </NavLink>
         </li>
         <li>
-          <img src="/src/assets/group-icon.png" alt="" />
-          <NavLink to="/patients">Patients</NavLink>
+          <NavLink to="/patients">
+            <img src="/src/assets/group-icon.png" alt="" />
+            Patients
+          </NavLink>
         </li>
         <li>
-          <img src="/src/assets/calendar-icon.png" alt="" />
-          <NavLink to="/schedule">Schedule</NavLink>
+          <NavLink to="/schedule">
+            <img src="/src/assets/calendar-icon.png" alt="" />
+            Schedule
+          </NavLink>
         </li>
         <li>
-          <img src="/src/assets/chat-icon.png" alt="" />
-          <NavLink to="/message">Message</NavLink>
+          <NavLink to="/message">
+            <img src="/src/assets/chat-icon.png" alt="" />
+            Message
+          </NavLink>
         </li>
         <li>
-          <img src="/src/assets/credit-card-icon.png" alt="" />
-          <NavLink to="/transaction">Transactions</NavLink>
+          <NavLink to="/transaction">
+            <img src="/src/assets/credit-card-icon.png" alt="" />
+            Transactions
+          </NavLink>
         </li>
       </ul>
 

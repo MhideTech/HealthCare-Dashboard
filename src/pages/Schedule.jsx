@@ -3,9 +3,11 @@ import styles from "./OtherPagesStyle.module.css";
 
 function Schedule() {
   return (
-    <div className={styles.app}>
+    <div>
       <Navbar />
-      <h1>Schedule</h1>
+      <div className={styles.app}>
+        <h1>Schedule</h1>
+      </div>
     </div>
   );
 }

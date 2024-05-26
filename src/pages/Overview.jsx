@@ -1,11 +1,13 @@
 import styles from "./OtherPagesStyle.module.css";
-import Navbar from '../components/Navbar'
+import Navbar from "../components/Navbar";
 
 function Overview() {
   return (
-    <div className={styles.app}>
+    <div>
       <Navbar />
-      <h1>Overview</h1>
+      <div className={styles.app}>
+        <h1>Overview</h1>
+      </div>
     </div>
   );
 }

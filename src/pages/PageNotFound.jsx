@@ -3,9 +3,11 @@ import styles from "./OtherPagesStyle.module.css";
 
 function PageNotFound() {
   return (
-    <div className={styles.app}>
+    <div>
       <Navbar />
-      <h1>Page not found</h1>
+      <div className={styles.app}>
+        <h1>Page not found</h1>
+      </div>
     </div>
   );
 }
