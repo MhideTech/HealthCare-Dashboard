@@ -1,5 +1,57 @@
 .profile {
   width: 23%;
   border-radius: 16px;
-  background-color: green;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  padding: 32px 20px;
+}
+
+.profileImg {
+  display: block;
+  margin: 0px auto;
+}
+
+.profile h1 {
+  color: var(--unnamed-color-072635);
+  text-align: center;
+  font: normal normal 800 24px/33px Manrope;
+  margin: 20px 0px;
+  color: #072635;
+}
+
+.personalInfo {
+  display: flex;
+  align-items: center;
+  margin: 24px 0px;
+}
+
+.personalInfo img {
+  margin: 0px 16px 0px 0px;
+}
+
+.personalInfo div p {
+  font: normal normal medium 14px/19px Manrope;
+  color: var(--unnamed-color-072635);
+  text-transform: capitalize;
+}
+
+.personalInfo h3 {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+    var(--unnamed-font-family-manrope);
+  color: var(--unnamed-color-072635);
+  text-transform: capitalize;
+}
+
+.profile button {
+  background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  padding: 11px 40px;
+  border: none;
+  outline: none;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+    var(--unnamed-font-family-manrope);
+  display: block;
+  margin: 0px auto;
+  cursor: pointer;
 }
