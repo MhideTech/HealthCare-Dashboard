@@ -99,3 +99,10 @@ body {
   padding: 18px;
   background-color: #f6f7f8;
 }
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -4,7 +4,7 @@ function PatientsList() {
   return (
     <section className={styles.patientsListContainer}>
       <div className={styles.patientListHeader}>
-        <h1>Header</h1>
+        <h1>Patients</h1>
         <img src="/src/assets/search-icon.png" alt="" />
       </div>
       <ul>

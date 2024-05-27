@@ -7,7 +7,7 @@
 
 .profileImg {
   display: block;
-  margin: 0px auto;
+  margin: 0px auto 12px;
 }
 
 .profile h1 {
@@ -52,6 +52,6 @@
     var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
     var(--unnamed-font-family-manrope);
   display: block;
-  margin: 0px auto;
+  margin: 40px auto 0px;
   cursor: pointer;
 }
