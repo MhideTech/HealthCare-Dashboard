@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import styles from "./PatientsList.module.css";
 
-function PatientsList() {
+function PatientsList({ patients }) {
   return (
     <section className={styles.patientsListContainer}>
       <div className={styles.patientListHeader}>
@@ -8,16 +9,18 @@ function PatientsList() {
         <img src="/src/assets/search-icon.png" alt="" />
       </div>
       <ul>
-        <li className={styles.patient}>
-          <div className={styles.patientImg}>
-            <img src="/src/assets/layer-2.png" alt="" />
-            <div>
-              <h3>Jessica Taylor</h3>
-              <p>Female, 28</p>
+        {patients.map((patient) => (
+          <li className={styles.patient} key={patient.name}>
+            <div className={styles.patientImg}>
+              <img src={patient.profile_picture} alt="" />
+              <div>
+                <h3>{patient.name}</h3>
+                <p>{patient.gender}, {patient.age}</p>
+              </div>
             </div>
-          </div>
-          <img src="/src/assets/more-horizontal-icon.png" alt="" />
-        </li>
+            <img src="/src/assets/more-horizontal-icon.png" alt="" />
+          </li>
+        ))}
       </ul>
     </section>
   );

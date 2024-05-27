@@ -1,6 +1,6 @@
 .patientsListContainer {
   width: 23%;
-  height: 500px;
+  height: 1010px;
   background-color: white;
   border-radius: 16px;
 }
@@ -22,6 +22,11 @@
   cursor: pointer;
 }
 
+.patientsListContainer ul {
+  height: 928px;
+  overflow-y: scroll;
+}
+
 .patient,
 .patientImg {
   display: flex;
@@ -38,6 +43,8 @@
 }
 
 .patientImg img {
+  width: 48px;
+  height: 48px;
   margin: 0px 12px 0px 0px;
 }
 
