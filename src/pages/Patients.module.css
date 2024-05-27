@@ -1,9 +1,10 @@
-.app{
-    width: 100%;
+.app {
+  width: 100%;
 }
 
-.main{
-    display: flex;
-    justify-content: space-between;
-    margin: 32px 0px;
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0px;
+  flex-wrap: wrap;
 }
