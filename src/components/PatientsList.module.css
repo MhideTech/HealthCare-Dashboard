@@ -27,6 +27,18 @@
   overflow-y: scroll;
 }
 
+.patientsListContainer ul::-webkit-scrollbar {
+  width: 6px;
+  background: #e3e4e6 0% 0% no-repeat padding-box;
+}
+
+.patientsListContainer ul::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 100px;
+  background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+}
+
 .patient,
 .patientImg {
   display: flex;

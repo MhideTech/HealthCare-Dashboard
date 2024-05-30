@@ -7,6 +7,11 @@ import styles from "./Patients.module.css";
 
 function Patients() {
   const [patients, setPatients] = useState([]);
+  const [selectedPatient, setSelectedPatient] = useState({});
+
+  function handleSelectedPatient(selectedPatientName) {
+    setSelectedPatient(patients.find((patient) => patient.name === selectedPatientName ? null : selectedPatientName));
+  }
 
   useEffect(function () {
     let username = "coalition";
@@ -26,6 +31,7 @@ function Patients() {
         const data = await res.json();
         console.log(data);
         setPatients(data);
+        setSelectedPatient(data[3])
       } catch (e) {
         console.log(e);
       }
@@ -38,9 +44,13 @@ function Patients() {
     <div className={styles.app}>
       <Navbar />
       <section className={styles.main}>
-        <PatientsList patients={patients} />
-        <DiagnosisSection />
-        <Profile />
+        <PatientsList
+          patients={patients}
+          onSelectPatient={handleSelectedPatient}
+          selectedPatient={selectedPatient}
+        />
+        <DiagnosisSection selectedPatient={selectedPatient} />
+        <Profile selectedPatient={selectedPatient} />
       </section>
     </div>
   );

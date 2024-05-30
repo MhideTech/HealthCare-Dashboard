@@ -9,6 +9,8 @@
 .profileImg {
   display: block;
   margin: 0px auto 12px;
+  width: 200px;
+  height: 200px;
 }
 
 .profile h1 {
