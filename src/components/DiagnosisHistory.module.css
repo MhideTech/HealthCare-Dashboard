@@ -1,6 +1,6 @@
 .diagnosis {
   width: 100%;
-  height: fit-content;
+  height: 673px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 20px;
@@ -28,12 +28,15 @@
 
 .diagnosisBox {
   width: 31%;
+  height: 242px;
   padding: 16px;
   border-radius: 12px;
 }
 
 .diagnosisBox img {
-  margin: 0px 0px 20px;
+  width: 96px;
+  height: 96px;
+  margin: 0px 0px 16px;
 }
 
 .diagnosisBox h2 {
@@ -54,7 +57,7 @@
 .diagnosisBox p {
   color: var(--unnamed-color-072635);
   font: normal normal normal 14px/19px Manrope;
-  margin: 17px 0px 0px;
+  margin: 15px 0px 0px;
 }
 
 .respiratory {

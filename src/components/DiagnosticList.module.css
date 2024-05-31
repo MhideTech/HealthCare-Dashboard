@@ -1,6 +1,6 @@
 .diagnosticList {
   width: 100%;
-  height: fit-content;
+  height: 349px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 20px;
@@ -11,11 +11,15 @@
   color: var(--unnamed-color-072635);
   font: normal normal 800 24px/33px Manrope;
 }
+
+.listContainer{
+  height: 245px;
+  margin: 40px 0px 0px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 40px 0px 0px;
-  overflow-y: scroll;
 }
 
 colgroup col:nth-child(1) {
@@ -57,6 +61,11 @@ td {
 
 th {
   font: normal normal bold 14px/19px Manrope;
+}
+
+tbody{
+  max-height: 208px !important;
+  overflow-y: scroll;
 }
 
 tbody tr {

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import styles from "./DiagnosisHistory.module.css";
+import { Chart } from "chart.js";
 
 function DiagnosisHistory({ selectedPatient }) {
   console.log(selectedPatient.name);
@@ -21,7 +22,7 @@ function DiagnosisHistory({ selectedPatient }) {
         <div className={`${styles.diagnosisBox} ${styles.temperature}`}>
           <img src="/src/assets/temperature.png" alt="" />
           <h2>Temperature</h2>
-          <h1>{selectedPatient.diagnosis_history?.[0].temperature.value}</h1>
+          <h1>{selectedPatient.diagnosis_history?.[0].temperature.value}°F</h1>
           <p>{selectedPatient.diagnosis_history?.[0].temperature.levels}</p>
         </div>
         <div className={`${styles.diagnosisBox} ${styles.heartRate}`}>

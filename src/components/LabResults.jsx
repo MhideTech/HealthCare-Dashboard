@@ -6,68 +6,12 @@ function LabResults({ selectedPatient }) {
     <div className={styles.labResults}>
       <h1>Lab Results</h1>
       <div className={styles.resultContainer}>
-        {selectedPatient?.lab_results?.map((result) => {
-          <div className={styles.result}>
+        {selectedPatient.lab_results?.map((result) => (
+          <div className={styles.result} key={Math.random()}>
             <p>{result}</p>
             <img src="/src/assets/download-icon.png" alt="" />
-          </div>;
-        })}
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
-        <div className={styles.result}>
-          <p>Blood Tests</p>
-          <img src="/src/assets/download-icon.png" alt="" />
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

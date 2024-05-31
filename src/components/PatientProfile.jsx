@@ -67,7 +67,7 @@ function PatientProfile({ selectedPatient }) {
         </div>
       </div>
       <div className={styles.personalInfo}>
-        <img src="/src/assets/phone-icon.png" alt="" />
+        <img src="/src/assets/Insurance-icon.png" alt="" />
         <div className="">
           <p>Insurance Provider</p>
           <h3>{selectedPatient.insurance_type}</h3>
