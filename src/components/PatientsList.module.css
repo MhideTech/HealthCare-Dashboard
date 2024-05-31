@@ -25,7 +25,6 @@
 .patientsListContainer ul {
   height: 961px;
   overflow-y: scroll;
-  padding: 0px 20px;
 }
 
 .patientsListContainer ul::-webkit-scrollbar {
@@ -48,9 +47,9 @@
 }
 
 .patient {
-  height: 48px;
-  margin: 32px 0px;
+  height: 80px;
   cursor: pointer;
+  padding: 11px 20px;
 }
 .patient:hover {
   background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
