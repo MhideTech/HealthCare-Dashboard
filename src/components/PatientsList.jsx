@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from "./PatientsList.module.css";
 
-function PatientsList({ patients, onSelectPatient, selectedPatient }) {
+function PatientsList({ patients, onSelectPatient }) {
   return (
     <section className={styles.patientsListContainer}>
       <div className={styles.patientListHeader}>
@@ -12,7 +12,7 @@ function PatientsList({ patients, onSelectPatient, selectedPatient }) {
         {patients.map((patient) => (
           <li
             className={styles.patient}
-            onClick={() => onSelectPatient(selectedPatient.name)}
+            onClick={() => onSelectPatient(patient.name)}
             key={patient.name}
           >
             <div className={styles.patientImg}>

@@ -10,7 +10,9 @@ function Patients() {
   const [selectedPatient, setSelectedPatient] = useState({});
 
   function handleSelectedPatient(selectedPatientName) {
-    setSelectedPatient(patients.find((patient) => patient.name === selectedPatientName ? null : selectedPatientName));
+    setSelectedPatient(
+      patients.find((patient) => patient.name === selectedPatientName)
+    );
   }
 
   useEffect(function () {
@@ -31,7 +33,7 @@ function Patients() {
         const data = await res.json();
         console.log(data);
         setPatients(data);
-        setSelectedPatient(data[3])
+        setSelectedPatient(data[3]);
       } catch (e) {
         console.log(e);
       }

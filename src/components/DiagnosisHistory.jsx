@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 import styles from "./DiagnosisHistory.module.css";
-import { Chart } from "chart.js";
+import Graph from "./Graph";
 
 function DiagnosisHistory({ selectedPatient }) {
-  console.log(selectedPatient.name);
   return (
     <div className={styles.diagnosis}>
       <h1>Diagnosis History</h1>
-      <div className={styles.chart}></div>
+      <div className={styles.chart}>
+        <Graph selectedPatient={selectedPatient} />
+      </div>
       <div className="d-flex">
         <div className={`${styles.diagnosisBox} ${styles.respiratory}`}>
           <img src="/src/assets/respiratory-rate.png" alt="" />
