@@ -3,9 +3,6 @@ import styles from "./DiagnosisHistory.module.css";
 import Graph from "./Graph";
 
 function DiagnosisHistory({ selectedPatient }) {
-  console.log(
-    selectedPatient.diagnosis_history[0].blood_pressure.systolic.levels
-  );
   return (
     <div className={styles.diagnosis}>
       <h1>Diagnosis History</h1>
@@ -17,12 +14,12 @@ function DiagnosisHistory({ selectedPatient }) {
             <h3>Systolic</h3>
           </div>
           <h1>
-            {selectedPatient.diagnosis_history[0].blood_pressure.systolic.value}
+            {selectedPatient.diagnosis_history?.[0].blood_pressure.systolic.value}
           </h1>
           <h3 className={styles.average}>
             <img src="src\assets\arrow-up.png" alt="" />
             {
-              selectedPatient.diagnosis_history[0].blood_pressure.systolic
+              selectedPatient.diagnosis_history?.[0].blood_pressure.systolic
                 .levels
             }
           </h3>
@@ -33,13 +30,13 @@ function DiagnosisHistory({ selectedPatient }) {
           </div>
           <h1>
             {
-              selectedPatient.diagnosis_history[0].blood_pressure.diastolic
+              selectedPatient.diagnosis_history?.[0].blood_pressure.diastolic
                 .value
             }
           </h1>
           <h3 className={styles.average}>
             <img src="src\assets\arrow-down.png" alt="" />
-            {selectedPatient.diagnosis_history[0].blood_pressure.diastolic
+            {selectedPatient.diagnosis_history?.[0].blood_pressure.diastolic
             .levels}
           </h3>
         </div>

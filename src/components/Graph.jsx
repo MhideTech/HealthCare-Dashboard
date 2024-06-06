@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Line } from "react-chartjs-2";
+import styles from './Graph.module.css'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -28,7 +29,35 @@ function Graph({ selectedPatient }) {
     pointBorderColor: "#FFFFFF",
     tension: 0.4,
     pointRadius: 5,
+    scales: {
+      x: {
+        grid: {
+          display: false, // Hides the vertical grid lines
+        },
+        ticks: {
+          display: true, // Hides the x-axis labels
+        },
+      },
+      y: {
+        grid: {
+          display: true, // Hides the vertical grid lines
+        },
+        ticks: {
+          display: true, // Hides the x-axis labels
+        },
+      },
+    },
+
+    plugins: {
+      legend: {
+        display: false, // Hides the legend
+      },
+      labels: {
+        display: true, // Hides the legend
+      },
+    },
   };
+
   const data = {
     labels: [
       "Oct, 2023",
@@ -40,7 +69,7 @@ function Graph({ selectedPatient }) {
     ],
     datasets: [
       {
-        label: "Steps By Orlah",
+        // label: '',
         data: [
           selectedPatient?.diagnosis_history?.[5].blood_pressure.diastolic
             .value,
@@ -59,7 +88,7 @@ function Graph({ selectedPatient }) {
         pointBackgroundColor: "#7E6CAB",
       },
       {
-        label: "Steps By Mide",
+        label: null,
         data: [
           selectedPatient?.diagnosis_history?.[5].blood_pressure.systolic.value,
           selectedPatient?.diagnosis_history?.[4].blood_pressure.systolic.value,
@@ -74,7 +103,17 @@ function Graph({ selectedPatient }) {
     ],
   };
 
-  return <Line options={options} data={data} />;
+  return (
+    <div>
+      <div className={styles.blood_pressure}>
+        <h1>Blood Pressure</h1>
+        <p>
+          Last 6 months <img src="/src/assets/expand-more.png" alt="" />
+        </p>
+      </div>
+      <Line options={options} data={data} />
+    </div>
+  );
 }
 
 export default Graph;
