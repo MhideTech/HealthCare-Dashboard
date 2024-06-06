@@ -24,6 +24,61 @@
   background: #f4f0fe 0% 0% no-repeat padding-box;
   border-radius: 12px;
   margin: 40px 0px 20px;
+  padding: 16px;
+  display: flex;
+}
+
+.chart canvas {
+  width: 447px;
+}
+
+.graphDetails {
+  width: 208px;
+  /* background-color: red; */
+}
+
+.graphDetails .name {
+  display: flex;
+  align-items: center;
+}
+
+.graphDetails .name .label {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0px 4px 0px 0px;
+}
+
+.graphDetails .name .systolic {
+  background: #e66fd2 0% 0% no-repeat padding-box;
+}
+
+.graphDetails .name .diastolic {
+  background: #8C6FE6 0% 0% no-repeat padding-box;
+}
+
+.graphDetails .name h3 {
+  font: normal normal bold 14px/19px Manrope;
+  color: #072635;
+}
+
+.graphDetails h1 {
+  font: normal normal bold 22px/30px Manrope;
+  color: #072635;
+  margin: 8px 0px;
+}
+
+.graphDetails .average {
+  font: normal normal normal 14px/19px Manrope;
+  color: #072635;
+}
+
+.graphDetails .average img {
+  margin: 0px 8px 0px 0px;
+}
+
+.graphDetails hr{
+  margin: 15px 0px;
 }
 
 .diagnosisBox {
@@ -40,12 +95,8 @@
 }
 
 .diagnosisBox h2 {
-  font: var(--unnamed-font-style-normal) normal medium 16px/22px
-    var(--unnamed-font-family-manrope);
-  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-072635);
   font: normal normal medium 16px/22px Manrope;
-  text-transform: capitalize;
   /* margin: 20px 0px 0px; */
 }
 
